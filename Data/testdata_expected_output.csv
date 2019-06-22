@@ -1,0 +1,32 @@
+"First Name", "Last Name", "Email", "List", "Status", "Opt-In Type", "Created On"
+
+// Lastname formatting test
+
+"", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+
+"", "Hansen Petersen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Birgit", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Birgit Hansen", "Petersen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Birgit Hansen", "Petersen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Birgit", "Hansen Petersen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+
+"", "Æselæsel Ødselødsel Ågeåge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Æselæsel", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Æselæsel Ødselødsel", "Ågeåge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Æselæsel Ødselødsel", "Ågeåge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Æselæsel", "Ødselødsel Ågeåge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+
+
+// Capitalize formatting test
+
+"Birgit", "Hansen Petersen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Birgit-Birgit Begitte", "Albertsen Hansen-Hansen Petersen-Petersen Robertsen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"Birte Birgit-Birgit Begitte", "Albertsen Hansen-Hansen Petersen-Petersen Robertsen", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+
+"Æselæsel", "Ødselødsel Ågeåge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52""
+"Æsel-Æsel Ødsel", "Ødsel Ødsel-Ødsel Åge-Åge Åge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52""
+"Ælter Æsel-Æsel Ødsel", "Ødsel Ødsel-Ødsel Åge-Åge Åge", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52""
+"Üwe Üwe-Üwe", "Üwe Üwe-Üwe", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52""
+
+// Don't touch non-name fields
+"Ælter Æsel-Æsel Ødsel", "Ødsel Ødsel-Ødsel Åge-Åge Åge", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52""
