@@ -7,11 +7,11 @@ namespace NinaFormattingApp
 {
 	class Program
 	{
-		// static string inputFilename = "testdata.csv";
-		// static string outputFilename = "testdata_output.csv";
+		static string inputFilename = "testdata.csv";
+		static string outputFilename = "testdata_output.csv";
 
-		static string inputFilename = "nina_source_data.csv";
-		static string outputFilename = "nina_data_output.csv";
+		// static string inputFilename = "nina_source_data.csv";
+		// static string outputFilename = "nina_data_output.csv";
 		// static string outputFilename = "nina_data_output_no_quotes.csv";
 
 		static string sourceText;
@@ -36,18 +36,19 @@ namespace NinaFormattingApp
 
 	public static class RegexProcessor
 	{
-		static Regex regex = new Regex(@"^""([^""]*)\s([\w-_\.]+)"",\s""""(.*)$", RegexOptions.Multiline);
+		// @"^""([^""]*)\s([\w-_\.]+)"",\s""""(.*)$", @"""$1"", ""$2""$3"
+		static Regex regex = new Regex(@"^""([\w-_\.]+)(\s([^""]*))"",\s""""(.*)$", RegexOptions.Multiline);
 
 		public static string Process(string sourceText)
 		{
 			string resultText;
 
-			resultText = regex.Replace(sourceText, @"""$1"", ""$2""$3");
+			resultText = regex.Replace(sourceText, @"""$1"", ""$3""$4");
 
 			resultText = Regex.Replace(resultText, @"^(""[^""]*"", )(""[^""]*"")", (Match match) => {
 				string result = match.ToString();
 				result = Regex.Replace(result, @"\b\w", (Match innerMatch) => innerMatch.ToString().ToUpper());
-				// result = Regex.Replace(result, @"\B\w", (Match innerMatch) => innerMatch.ToString().ToLower());
+				result = Regex.Replace(result, @"\B\w", (Match innerMatch) => innerMatch.ToString().ToLower());
 				return result;
 			}, RegexOptions.Multiline);
 
