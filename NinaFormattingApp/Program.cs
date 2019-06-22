@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace NinaFormattingApp
@@ -25,7 +26,7 @@ namespace NinaFormattingApp
 			string resultText = RegexProcessor.Process(sourceText);
 			Console.Write(resultText);
 
-			File.WriteAllText(outputFilename, resultText);
+			File.WriteAllText(outputFilename, resultText, Encoding.UTF8);
 
 			Console.WriteLine("\nPress any key to quit");
 			Console.ReadKey(false);
