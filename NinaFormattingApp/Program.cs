@@ -45,7 +45,10 @@ namespace NinaFormattingApp
 			resultText = regex.Replace(sourceText, @"""$1"", ""$2""$3");
 
 			resultText = Regex.Replace(resultText, @"^(""[^""]*"", )(""[^""]*"")", (Match match) => {
-				return Regex.Replace(match.ToString(), @"\b\w", (Match innerMatch) => innerMatch.ToString().ToUpper());
+				string result = match.ToString();
+				result = Regex.Replace(result, @"\b\w", (Match innerMatch) => innerMatch.ToString().ToUpper());
+				result = Regex.Replace(result, @"\B\w", (Match innerMatch) => innerMatch.ToString().ToLower());
+				return result;
 			}, RegexOptions.Multiline);
 
 			// resultText = resultText.Replace("\"", "");
