@@ -41,3 +41,7 @@
 // Abbreviated names
 "John F. Kennedy", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
 "John F.", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+
+// Caps
+"ÆNNE-ØETTE OLSEN-HANSEN PETERSEN ÆØÅ", "ÆNNE-ØETTE OLSEN-HANSEN PETERSEN ÆØÅ", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
+"æNnE-ØeTTE olsen-hanSEN peterseN æØÅ", "æNnE-ØeTTE olsen-hanSEN peterseN æØÅ", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
