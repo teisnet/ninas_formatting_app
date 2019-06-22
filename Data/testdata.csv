@@ -30,3 +30,14 @@
 
 // Don't touch non-name fields
 "ælter æsel-æsel ødsel", "ødsel ødsel-ødsel åge-åge åge", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52""
+
+// Dash names
+"Anne Mette-Olsen", "", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
+"Anne Mette-Olsen", "Hansen", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
+"Anne-Mette Olsen", "", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
+"Anne-Mette Olsen", "Hansen", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
+"Anne-Mette Olsen-Hansen", "", "mymail@testmail.dk", "public", "subscribed", "double opt-in", "2017-01-04 18:44:52"
+
+// Abbreviated names
+"John F. Kennedy", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
+"John F.", "", "mymail@testmail.dk", "Public", "Subscribed", "Double Opt-In", "2017-01-04 18:44:52"
