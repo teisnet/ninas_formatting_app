@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NinaFormattingApp": {
+      "commandName": "Project",
+      "workingDirectory": "$(SolutionDir)/Data/"
+    }
+  }
+}
