@@ -6,8 +6,12 @@ namespace NinaFormattingApp
 {
 	class Program
 	{
-		static string inputFilename = "testdata.csv";
-		static string outputFilename = "testdata_output.csv";
+		// static string inputFilename = "testdata.csv";
+		// static string outputFilename = "testdata_output.csv";
+
+		static string inputFilename = "nina_source_data.csv";
+		static string outputFilename = "nina_data_output.csv";
+		// static string outputFilename = "nina_data_output_no_quotes.csv";
 
 		static string sourceText;
 
