@@ -7,11 +7,11 @@ namespace NinaFormattingApp
 {
 	class Program
 	{
-		// static string inputFilename = "testdata.csv";
-		// static string outputFilename = "testdata_output.csv";
+		static string inputFilename = "testdata.csv";
+		static string outputFilename = "testdata_output.csv";
 
-		static string inputFilename = "nina_source_data.csv";
-		static string outputFilename = "nina_data_output.csv";
+		// static string inputFilename = "nina_source_data.csv";
+		// static string outputFilename = "nina_data_output.csv";
 		// static string outputFilename = "nina_data_output_no_quotes.csv";
 
 		static string sourceText;
@@ -36,7 +36,7 @@ namespace NinaFormattingApp
 
 	public static class RegexProcessor
 	{
-		static Regex regex = new Regex(@"^""([^""]*)\s(\w+)"",\s""""(.*)$", RegexOptions.Multiline);
+		static Regex regex = new Regex(@"^""([^""]*)\s([\w-_\.]+)"",\s""""(.*)$", RegexOptions.Multiline);
 
 		public static string Process(string sourceText)
 		{
