@@ -16,7 +16,6 @@ namespace NinaFormattingApp
 
 		static string inputFilename = "nina_source_data.csv";
 		static string outputFilename = "nina_data_output.csv";
-		// static string outputFilename = "nina_data_output_no_quotes.csv";
 
 		static string sourceText;
 
