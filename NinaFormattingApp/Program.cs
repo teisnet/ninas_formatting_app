@@ -11,11 +11,11 @@ namespace NinaFormattingApp
 
 	class Program
 	{
-		// static string inputFilename = "testdata.csv";
-		// static string outputFilename = "testdata_output.csv";
+		static string inputFilename = "testdata.csv";
+		static string outputFilename = "testdata_output.csv";
 
-		static string inputFilename = "nina_source_data.csv";
-		static string outputFilename = "nina_data_output.csv";
+		// static string inputFilename = "nina_source_data.csv";
+		// static string outputFilename = "nina_data_output.csv";
 
 		static string sourceText;
 
@@ -68,7 +68,7 @@ namespace NinaFormattingApp
 				result = Regex.Replace(result, @"\b\w", (Match innerMatch) => innerMatch.ToString().ToUpper());
 
 				// Lowercase remaining characters
-				// result = Regex.Replace(result, @"\B\w", (Match innerMatch) => innerMatch.ToString().ToLower());
+				result = Regex.Replace(result, @"\B\w", (Match innerMatch) => innerMatch.ToString().ToLower());
 
 				return result;
 
