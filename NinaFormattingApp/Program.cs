@@ -49,14 +49,14 @@ namespace NinaFormattingApp
 
 		// Regex 2: "Peter Birger Olsen", "" -> "Peter", "Birger Olsen"
 		// First word in 'firstname' ($1), remaining words in 'lastname' ($2).
-		static Regex regex = new Regex(@"^""([\w-_\.]+)(\s([^""]*))"",\s""""(.*)$", RegexOptions.Multiline);
+		static Regex regex = new Regex(@"^""([\w-_\.]+)\s([^""]*)"",\s""""(.*)$", RegexOptions.Multiline);
 
 		public static string Process(string sourceText)
 		{
 			string resultText;
 
 			// 1) Fullname to firstname/lastname conversion
-			resultText = regex.Replace(sourceText, @"""$1"", ""$3""$4");
+			resultText = regex.Replace(sourceText, @"""$1"", ""$2""$3");
 
 			// 2) Character casing
 			// Match the firstname field ($1) and the lastname field ($2) for character casing
