@@ -9,6 +9,8 @@ namespace NinaFormattingApp
 	// Converts the fullname field to a firstname and a lastname field.
 	// See 'testdata_expected_output.csv' for examples.
 
+	// SolutionDir/Data/ is set as the current working directory
+
 	class Program
 	{
 		// static string inputFilename = "testdata.csv";
